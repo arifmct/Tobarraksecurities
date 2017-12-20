@@ -1,0 +1,64 @@
+﻿body
+{
+	font-family: verdana;
+	font-size: 12px;
+	text-align: center;
+	vertical-align: top;
+	background-image: url( 'bg.png' );
+	background-color: #669999;
+}
+.Headers
+{
+	font-size: 50px;
+	font-weight: bold;
+	color:Olive;
+	text-align: center;
+	vertical-align: middle;
+	border-width: thin;
+	border-style: groove groove inset groove;
+	border-color: #FFFF00;
+	width: 850px;
+	-webkit-border-radius: 5em; 
+	-moz-border-radius: .5em;
+	border-radius: 10px;
+}
+.Footers
+{
+	font-size: 13px;
+	font-weight: bold;
+	color:Purple;
+	text-align:left;
+	vertical-align: middle;
+	height:30px;
+	width: 800px;
+	padding-top:10px;
+	padding-left:10px;
+}
+
+.Contents
+{
+	border: 2px #3399CC solid;
+	border-width: thin;
+	background-color:#CCFFFF;
+	font-size: 12px;
+	vertical-align: top;
+	text-align: left;
+	width: 800px;
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-moz-box-shadow:3px 3px 3px #00CCCC;
+	-moz-box-topleft:0px;
+}
+.NewHead
+{
+	vertical-align: top;
+	text-align: left;
+	width: 800px;
+	padding-left:5px;
+}
+.cntin
+{
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:10px;
+}

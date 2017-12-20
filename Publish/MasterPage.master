@@ -1,0 +1,63 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="MasterPage, App_Web_cxv_d99c" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Tobarrak Securities ltd.</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="style/StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div><center>
+    <div class="NewHead">
+   
+        <img alt="" src="style/logo.png" style="width: 300px; height: 100px" /></div>
+    <div class="Contents">
+    <div class="cntin">
+        <asp:Label ID="lblGreting" runat="server" Font-Bold="True"></asp:Label>
+&nbsp;<asp:HyperLink ID="hpLog" runat="server">[hpLog]</asp:HyperLink>
+       <hr>
+        <asp:Menu ID="Menu1" runat="server" BackColor="#33CCCC" BorderColor="#FF6600" 
+            BorderStyle="Groove" BorderWidth="2px" DynamicHorizontalOffset="2" 
+            Font-Bold="True" Font-Names="Verdana" Font-Size="14px" ForeColor="#804040" 
+            Height="25px" Orientation="Horizontal" StaticSubMenuIndent="10px" 
+            Width="780px">
+            <StaticSelectedStyle BackColor="#FFCC66" />
+            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+            <DynamicMenuStyle BackColor="#FFFBD6" />
+            <DynamicSelectedStyle BackColor="#FFCC66" />
+            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+            <Items>
+                <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Default.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Free Share" Value="Free Share" 
+                    NavigateUrl="~/rpFreeShara.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Ledger" Value="Ledger" NavigateUrl="~/frmLedger.aspx"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/frmConfirmation.aspx" Text="Confirmation" 
+                    Value="Confirmation">
+                </asp:MenuItem>
+                <asp:MenuItem Text="My Account" Value="My Account" 
+                    NavigateUrl="~/frmMyAccount.aspx"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/frmContact.aspx" Text="Contact Us" 
+                    Value="Contact Us"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        </div><div class="cntin">
+            <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            <br />
+        </div>
+    </div>
+    <div class="Footers">
+    copyright @tobarrak securities ltd. 2016
+        <br />
+        Developer : Shamsujjaman Bappy, IUBAT-DotNet-08</a></div></center></div>
+    </form>
+</body>
+</html>
